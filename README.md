@@ -13,9 +13,13 @@
 Модели можно скать через терминал:
  ```
  cd vosk-model
- wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
+ wget https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip
  ```
- все файлы модели надо будер разархировать в папку vosk-model из папки vosk-model-*-*-0.10.
+ Модель выше на 45 МБ. Для более хороших результатов надо скачать более тяжеловестную модель на 2.5 GB:
+```
+wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
+```
+все файлы модели надо будер разархировать в папку vosk-model из папки vosk-model-*-*-0.22.
  
  Далее скачиваем DeepSpeech.
  ```
