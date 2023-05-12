@@ -8,7 +8,7 @@ import soundfile as sf
 
 def VOSK(wav_file):
     # Load the Vosk model
-    model = vosk.Model("./models/VoskMOdel")
+    model = vosk.Model("./models/vosk-model")
     x, _ = librosa.load(wav_file, sr=16000)
     sf.write('tmp.wav', x, 16000)
 
