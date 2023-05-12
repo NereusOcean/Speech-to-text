@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  frontend:
+    container_name: frontend
+    build: ./front
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    volumes:
+      - ./front:/front
+  flask:
+    container_name: server-flask
+    build: ./server
+    restart: unless-stopped
+    volumes:
+      - ./server:/server
+    ports:
+      - "5000:5000"
+    command: python main.py

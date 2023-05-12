@@ -1,0 +1,28 @@
+@import "src/styles/resolutions";
+@import "src/styles/variables";
+
+.AudioRecorder{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 33px;
+  &__controllers{
+    display: flex;
+    margin-top: 15px;
+
+    button{
+      font-size: 14px;
+      padding: 4px 12px;
+      margin: 0 8px
+    }
+  }
+
+  &__wave{
+    width: $screen-xl;
+    height: 213px;
+
+   @include dynamicWidth
+  }
+
+}

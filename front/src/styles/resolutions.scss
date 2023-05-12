@@ -1,0 +1,79 @@
+$screen-xss: 300px !default;
+$screen-xs: 375px !default;
+$screen-sm: 580px !default;
+$screen-md: 768px !default;
+$screen-lg: 1024px !default;
+$screen-xl: 1200px !default;
+
+$appbar-full-view: 826px !default;
+
+@mixin xssAndUp {
+    @media (min-width: $screen-xss) {
+        @content;
+    }
+}
+
+
+@mixin xsAndUp {
+    @media (min-width: $screen-xs) {
+        @content;
+    }
+}
+
+@mixin smAndUp {
+    @media (min-width: $screen-sm) {
+        @content;
+    }
+}
+
+@mixin mdAndUp {
+    @media (min-width: $screen-md) {
+        @content;
+    }
+}
+
+@mixin lgAndUp {
+    @media (min-width: $screen-lg) {
+        @content;
+    }
+}
+
+@mixin xlAndUp {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}
+
+@mixin appBarLgViewAndUp {
+    @media (min-width: $appbar-full-view) {
+        @content;
+    }
+}
+
+@mixin appBarFullViewAndUp {
+    @media (min-width: $appbar-full-view) {
+        @content;
+    }
+}
+
+@mixin dynamicWidth{
+    @include xssAndUp() {
+        width: $screen-xss;
+    }
+
+    @include xsAndUp() {
+        width: $screen-xs;
+    }
+
+    @include smAndUp() {
+        width: $screen-sm;
+    }
+
+    @include mdAndUp() {
+        width: $screen-md;
+    }
+
+    @include lgAndUp() {
+        width: $screen-lg;
+    }
+}

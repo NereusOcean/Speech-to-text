@@ -1,0 +1,50 @@
+@import "src/styles/resolutions";
+@import "src/styles/variables";
+
+.DropBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: $screen-xl;
+    height: 246px;
+
+    margin: 40px;
+
+    border-radius: 20px;
+
+    background-color: $section-bg;
+    color: white;
+
+    cursor: pointer;
+
+    &__consolePanel{
+        height: 18px;
+        margin: 12px 0;
+    }
+
+    &__fileUpload{
+        button:last-child{
+            margin-left: 10px;
+        }
+    }
+
+    &__downloadTypesInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 40px;
+
+        color: white;
+    }
+
+    &__text {
+        text-align: center;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    @include dynamicWidth;
+}
