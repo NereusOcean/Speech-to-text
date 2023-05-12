@@ -33,7 +33,7 @@ wget https://alphacephei.com/vosk/models/vosk-model-ru-0.10.zip
 
 Запускаем проект через Docker из корня проекта:
 ```
-cd ..
+cd ../..
 docker-compose up
 ```
 это может занять некоторое время.
