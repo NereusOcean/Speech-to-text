@@ -61,7 +61,7 @@ const MainPage = () => {
 
     return (
         <div className={styles.MainPage}>
-            <h1>WAV to TEXT</h1>
+            <h1>SPEECH to TEXT</h1>
             {wavFile || wavBlob ? (
                 <div>
                     {isLoading ? (

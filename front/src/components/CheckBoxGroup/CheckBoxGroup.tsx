@@ -43,7 +43,7 @@ const CheckBoxGroup: React.FC<Props> = ({ setMethod }) => {
                         name="SpeechRecognition"
                     />
                 }
-                label="SpeechRecognition"
+                label="Russia (RNNs)"
             />
             <FormControlLabel
                 control={
@@ -53,7 +53,7 @@ const CheckBoxGroup: React.FC<Props> = ({ setMethod }) => {
                         name="Vosk"
                     />
                 }
-                label="Vosk"
+                label="Russia"
             />
             <FormControlLabel
                 control={
@@ -63,7 +63,7 @@ const CheckBoxGroup: React.FC<Props> = ({ setMethod }) => {
                         name="deepspeech"
                     />
                 }
-                label="DeepSpeech"
+                label="English"
             />
             {/*<FormControlLabel*/}
             {/*    control={*/}
