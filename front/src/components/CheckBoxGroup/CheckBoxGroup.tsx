@@ -65,26 +65,7 @@ const CheckBoxGroup: React.FC<Props> = ({ setMethod }) => {
                 }
                 label="English"
             />
-            {/*<FormControlLabel*/}
-            {/*    control={*/}
-            {/*        <Checkbox*/}
-            {/*            checked={shit2}*/}
-            {/*            onChange={handleChange}*/}
-            {/*            name="shit2"*/}
-            {/*        />*/}
-            {/*    }*/}
-            {/*    label="shit 2"*/}
-            {/*/>*/}
-            {/*<FormControlLabel*/}
-            {/*    control={*/}
-            {/*        <Checkbox*/}
-            {/*            checked={shit3}*/}
-            {/*            onChange={handleChange}*/}
-            {/*            name="shit3"*/}
-            {/*        />*/}
-            {/*    }*/}
-            {/*    label="shit 3"*/}
-            {/*/>*/}
+         
         </FormGroup>
     );
 };
