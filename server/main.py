@@ -6,7 +6,6 @@ from custom_deepspeech import deepspeech_transcribe
 
 nameFile = "wavFileFromFront.wav"
 
-
 app = Flask(__name__)
 CORS(app)
 
@@ -26,23 +25,6 @@ def upload_file():
         return deepspeech_transcribe(nameFile,"./models/deepspeech-0.9.3-models.pbmm","./models/deepspeech-0.9.3-models.scorer")
 
 
-@app.route('/')
-def fff():
-    return "FUCK"
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
 
-
-# import kaldi
-#
-# # create a 3x3 matrix
-# mat = kaldi.matrix.Matrix(3, 3)
-#
-# # set some values
-# mat[0, 0] = 1.0
-# mat[1, 1] = 2.0
-# mat[2, 2] = 3.0
-#
-# # print the matrix
-# print(mat)
